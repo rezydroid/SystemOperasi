@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Company profile kelompok System Operasi - IT Bootcamp HIMTIKA Unsika 2026." />
+
+    <!-- Tulisan ini muncul di tab browser sebagai judul halaman -->
+    <title>System Operasi - Company Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Font dari Google. Link-nya panjang, tidak perlu dihafal :) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet"/>
+
+    <!-- Stylesheet utama -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body id="top">
+    <!--
+    ================ PETA WEBSITE KITA ================
+    1. HEADER   -> logo + menu navigasi
+    2. HERO     -> nama kelompok (yang pertama dilihat orang)
+    3. PENYELENGGARA -> logo penyelenggara
+    4. POSTER   -> poster STBI (wajib)
+    5. TENTANG  -> filosofi nama kelompok
+    6. TIM      -> foto bersama + daftar nama
+    7. FOOTER   -> penutup
+    ===================================================
+    -->
+
+    <!-- ============================= HEADER / NAVBAR ============================= -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand">
+          <span class="brand-mark" aria-hidden="true">SO</span>
+          <span class="brand-text">
+            <strong>System Operasi</strong>
+            <small>Kelompok 8 &middot; IT Bootcamp HIMTIKA</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="siteNav">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="site-nav" id="siteNav" aria-label="Navigasi utama">
+          <a href="#beranda">Beranda</a>
+          <a href="#penyelenggara">Penyelenggara</a>
+          <a href="#poster">Poster STBI</a>
+          <a href="#tentang">Tentang Kami</a>
+          <a href="#tim">Tim</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+    <!-- ============================= HERO SECTION ============================= -->
+      <section class="hero" id="beranda">
+        <div class="container hero-inner">
+          <span class="eyebrow">Kelompok 8 &middot; IT Bootcamp 2026</span>
+          <h1>System Operasi</h1>
+          <p class="hero-lead">
+            Kami adalah kelompok peserta IT Bootcamp HIMTIKA Unsika yang belajar,
+            berkarya, dan bertumbuh bersama.
+          </p>
+          <div class="hero-actions">
+            <a href="#poster" class="btn btn-primary">Lihat Poster STBI</a>
+            <a href="#tim" class="btn btn-ghost">Kenalan dengan Tim</a>
+          </div>
+        </div>
+      </section>
+
+    <!-- ============================= PENYELENGGARA ============================= -->
+      <section class="section section-muted" id="penyelenggara">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Penyelenggara</span>
+            <h2>Diselenggarakan oleh</h2>
+          </div>
+          <div class="organizers">
+            <figure class="organizer">
+              <img src="assets/logo/himtika.png" alt="Logo HIMTIKA" loading="lazy" />
+              <figcaption>HIMTIKA Unsika</figcaption>
+            </figure>
+            <figure class="organizer">
+              <img src="assets/logo/logo_itb.png" alt="Logo IT Bootcamp 2026" loading="lazy" />
+              <figcaption>IT Bootcamp 2026</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+    <!-- ============================= POSTER STBI ============================= -->
+      <section class="section" id="poster">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Poster STBI</span>
+            <h2>Poster Kelompok Kami</h2>
+          </div>
+          <figure class="poster">
+            <img src="assets/poster/poster.png" alt="Poster STBI kelompok System Operasi" width="788" height="1115" loading="lazy" />
+          </figure>
+
+          <!-- Penjelasan isi poster -->
+          <div class="poster-info">
+            <article class="info-card">
+              <span class="info-icon" aria-hidden="true">1</span>
+              <h3>3 Fakta Web Dev</h3>
+              <ul>
+                <li><strong>Penggunaan internet meningkat.</strong> Setiap bisnis, personal brand, dan lembaga kini membutuhkan situs web profesional agar tetap relevan.</li>
+                <li><strong>Proses pembangunan kompleks.</strong> Membuat web bukan hanya soal tampilan, tetapi juga efisiensi server, keamanan data, dan kecepatan akses.</li>
+                <li><strong>Ekosistem terus berkembang.</strong> Framework dan tools modern membuat proses pembuatan web semakin cepat dan dinamis.</li>
+              </ul>
+            </article>
+
+            <article class="info-card">
+              <span class="info-icon" aria-hidden="true">2</span>
+              <h3>3 Pilihan Jalur Karier</h3>
+              <ul>
+                <li><strong>Frontend Developer.</strong> Fokus pada antarmuka pengguna (UI/UX).</li>
+                <li><strong>Backend Developer.</strong> Mengelola logika server, pemrosesan data, dan database.</li>
+                <li><strong>Fullstack Developer.</strong> Menguasai kedua sisi, frontend dan backend.</li>
+              </ul>
+            </article>
+
+            <article class="info-card">
+              <span class="info-icon" aria-hidden="true">3</span>
+              <h3>AI Mengancam Web Developer?</h3>
+              <p>
+                AI seperti ChatGPT dan GitHub Copilot memudahkan penulisan kode dasar,
+                namun logika arsitektur sistem, pemecahan masalah kompleks, dan pemahaman
+                kebutuhan pengguna tetap membutuhkan pemikiran kritis seorang developer.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <span class="info-icon" aria-hidden="true">4</span>
+              <h3>Software yang Populer</h3>
+              <ul class="tags">
+                <li>HTML5 &amp; CSS3</li>
+                <li>JavaScript &amp; TypeScript</li>
+                <li>React / Vue / Next.js</li>
+                <li>Node.js / Python / Go</li>
+              </ul>
+            </article>
+
+            <article class="info-card info-wide">
+              <span class="info-icon" aria-hidden="true">5</span>
+              <h3>Manfaatkan AI, Kuasai Masa Depan</h3>
+              <p>
+                Web developer yang menggunakan AI akan mengungguli developer yang tidak
+                menggunakannya. Kunci utamanya adalah pemahaman dasar yang kuat,
+                adaptabilitas, dan logika pemecahan masalah.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    <!-- ============================= FILOSOFI NAMA ============================= -->
+      <section class="section section-muted" id="tentang">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Tentang Kami</span>
+            <h2>Filosofi nama System Operasi</h2>
+          </div>
+          <div class="card about">
+            <p>
+              Sistem operasi adalah fondasi yang menghubungkan perangkat keras dengan
+              semua aplikasi di atasnya: mengatur sumber daya, menjaga semuanya
+              berjalan selaras, dan memastikan setiap proses mendapat gilirannya.
+            </p>
+            <p>
+              Begitu pula kelompok kami. Setiap anggota punya peran dan kekuatan
+              masing-masing, dan kami saling mengatur, mendukung, dan menyeimbangkan
+              agar proyek berjalan lancar sampai akhir.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    <!-- ============================= TIM: KABING + ANGGOTA ============================= -->
+      <section class="section" id="tim">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Tim</span>
+            <h2>Orang-orang di balik System Operasi</h2>
+            <p>Momen kami bersama Kabing.</p>
+          </div>
+
+          <div class="photos">
+            <img src="assets/foto-tim/foto1.png" alt="Foto bersama tim, pose berdiri" width="1280" height="721" loading="lazy" />
+            <img src="assets/foto-tim/foto2.png" alt="Foto bersama tim, pose salam" width="1280" height="721" loading="lazy" />
+            <img src="assets/foto-tim/foto3.png" alt="Foto bersama tim, pose hati" width="1280" height="721" loading="lazy" />
+          </div>
+
+          <article class="card kabing">
+            <span class="avatar" aria-hidden="true">K</span>
+            <div>
+              <h3>Sri Dayanti</h3>
+              <p>Kakak pembimbing kelompok System Operasi.</p>
+            </div>
+          </article>
+
+          <ul class="member-grid">
+            <li class="member"><span class="avatar" aria-hidden="true">1</span><strong>Raka Malik Aziz</strong><span>Ketua</span></li>
+            <li class="member"><span class="avatar" aria-hidden="true">2</span><strong>Trinita Elena Lumbantobing</strong><span>Anggota</span></li>
+            <li class="member"><span class="avatar" aria-hidden="true">3</span><strong>Yasmin Isna Agustin</strong><span>Anggota</span></li>
+            <li class="member"><span class="avatar" aria-hidden="true">4</span><strong>Silfa Adriyansyah</strong><span>Anggota</span></li>
+            <li class="member"><span class="avatar" aria-hidden="true">5</span><strong>Reza Farhan Maulana</strong><span>Anggota</span></li>
+            <li class="member"><span class="avatar" aria-hidden="true">6</span><strong>M. Zidan Hamdi</strong><span>Anggota</span></li>
+            <li class="member"><span class="avatar" aria-hidden="true">7</span><strong>Rifky Aunur Rahman</strong><span>Anggota</span></li>
+            <li class="member"><span class="avatar" aria-hidden="true">8</span><strong>Rizal Amru Ainur Ridho</strong><span>Anggota</span></li>
+            <li class="member"><span class="avatar" aria-hidden="true">9</span><strong>Surya Putra Rizaldi</strong><span>Anggota</span></li>
+            <li class="member"><span class="avatar" aria-hidden="true">10</span><strong>Dimas Prasetyo Adji</strong><span>Anggota</span></li>
+            <li class="member"><span class="avatar" aria-hidden="true">11</span><strong>Muhammad Mirza Al Fayyadh</strong><span>Anggota</span></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================= FOOTER ============================= -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img src="assets/logo/himtika.png" alt="Logo HIMTIKA" />
+          <img src="assets/logo/logo_itb.png" alt="Logo IT Bootcamp 2026" />
+        </div>
+        <p>&copy; 2026 System Operasi &middot; IT Bootcamp HIMTIKA Unsika</p>
+        <a href="#top" class="to-top">Kembali ke atas</a>
+      </div>
+    </footer>
+
+    <!-- JavaScript = "nyawa" website. -->
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
